@@ -55,8 +55,8 @@ vector<string> DisassembleFileLinesAndStore(vector<string> &fileLines) {
 int GetCalibrationValue(vector<string> &digitStrings) {
   int calibrationValue = 0;
   string twoDigitString = "";
-  for (string digitString : digitStrings) {
 
+  for (string digitString : digitStrings) {
     twoDigitString = digitString[0];
     twoDigitString += digitString[digitString.size() - 1];
     calibrationValue += stoi(twoDigitString);
